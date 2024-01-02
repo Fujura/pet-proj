@@ -1,0 +1,21 @@
+.item{
+    max-width: 600px;
+    background-color: darkslategray;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 24px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    width: 75%;
+    margin: 0 auto;
+}
+.img{
+    width: 80%;
+    border-radius: 6px;
+    margin: 20px 15px;
+}
