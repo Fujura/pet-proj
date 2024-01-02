@@ -1,6 +1,6 @@
 import App from "../App";
 import { Login } from "../components/Auth/Login/Login";
-import {createBrowserRouter, RouterProvider, RouterProviderProps} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import { Profile } from "../components/Profile/Profile";
 import { Register } from "../components/Auth/Register/Register";
 import { Items } from "../components/Items/Items";

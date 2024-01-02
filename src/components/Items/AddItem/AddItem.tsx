@@ -11,7 +11,7 @@ export const AddItem = () => {
     img: "",
   });
   const navigate = useNavigate();
-  const [cookie, setCookie] = useCookies(["jwt"]);
+  const [cookie] = useCookies(["jwt"]);
   const [isAuth, setIsAuth] = React.useState("");
   const onChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

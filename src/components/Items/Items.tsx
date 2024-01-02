@@ -1,8 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Item } from "./Item/Item";
-import { IItemData } from "../../interfaces/IItemData";
-import { useCookies } from "react-cookie";
 import { Link } from "react-router-dom";
 
 export const Items = () => {

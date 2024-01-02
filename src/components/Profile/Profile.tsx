@@ -35,6 +35,7 @@ export const Profile = () => {
   return <div>
     <p>{status}</p>
     <button onClick={() => {
+        setCookie('jwt', 'asfasf')
         removeCookie('jwt');
         setStatus('Выходим...')
     }}>Выйти</button>
