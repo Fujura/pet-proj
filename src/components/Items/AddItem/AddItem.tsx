@@ -13,6 +13,7 @@ export const AddItem = () => {
   const navigate = useNavigate();
   const [cookie] = useCookies(["jwt"]);
   const [isAuth, setIsAuth] = React.useState("");
+  const [isImgCorrect, setIsImgCorrect] = React.useState('')
   const onChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(() => ({
@@ -23,7 +24,10 @@ export const AddItem = () => {
 
   const submitHandler = async (e: any) => {
     e.preventDefault();
-
+    if(formData.img === ''){
+      setIsImgCorrect('Введите ссылку!');
+      return;
+    }
     try {
       const response = await axios.post("https://kind-light-804f4ce579.strapiapp.com/api/items", {
         data: formData,
@@ -90,6 +94,7 @@ export const AddItem = () => {
             value={formData.img}
             onChange={onChangeInputValue}
           />
+          <p style={{color: 'red'}}>{isImgCorrect}</p>
 
           <button type="submit">Submit</button>
         </form>
