@@ -9,10 +9,10 @@ function App() {
       </Link>
       <div>
       <Link to={"signin"}>
-        <button>Sign In</button>
+        <button style={{margin: '10px'}}>Авторизация</button>
       </Link>
       <Link to={"register"}>
-        <button>Sign Up</button>
+        <button>Регистрация</button>
       </Link>
       </div>
     </>

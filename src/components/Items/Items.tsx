@@ -38,6 +38,10 @@ export const Items = () => {
       <Link to={"/addItem"}>
         <button>Добавить Item</button>
       </Link>
+
+      <Link to={"/"}>
+        <button>Назад</button>
+      </Link>
     </div>
   );
 };
