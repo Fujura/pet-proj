@@ -11,7 +11,7 @@ export const AddItem = () => {
     img: "",
   });
   const navigate = useNavigate();
-  const [cookie, setCookie, removeCookie] = useCookies(["jwt", "__cf_bm"]);
+  const [cookie] = useCookies(["jwt", "__cf_bm"]);
 
   const [isAuth, setIsAuth] = React.useState("");
   const [isImgCorrect, setIsImgCorrect] = React.useState('')
@@ -46,7 +46,6 @@ export const AddItem = () => {
 
   React.useEffect(() => {   
     console.log(!!cookie.jwt);
-    removeCookie('__cf_bm')
     if (!!cookie.jwt === false) {
       setIsAuth("Вы не залогинены!");
       setTimeout(() => {
